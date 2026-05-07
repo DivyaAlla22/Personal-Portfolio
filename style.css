@@ -2846,3 +2846,39 @@ body.dark-theme .achievement-item {
 .dark-theme .close-success-popup:hover {
     color: #ff6b6b;
 }
+
+/* Paste this at the bottom of style.css */
+
+.achievement-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.achievement-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px; /* Adds space between each line */
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.achievement-list i {
+    color: var(--primary);
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+/* Fix for the sidebar overlapping on desktop */
+@media screen and (min-width: 1100px) {
+    #about, #achievements, #projects {
+        padding-right: 150px; /* Pushes content away from the right-side nav */
+    }
+}
+
+/* Fix for the clumping text you see in screenshots */
+.achievement-list strong {
+    color: var(--primary);
+    margin: 0 2px;
+}
