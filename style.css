@@ -2849,6 +2849,8 @@ body.dark-theme .achievement-item {
 
 /* Paste this at the bottom of style.css */
 
+/* Paste this at the bottom of style.css */
+
 .achievement-list {
     list-style: none;
     padding: 0;
@@ -2859,13 +2861,14 @@ body.dark-theme .achievement-item {
     display: flex;
     align-items: flex-start;
     gap: 12px;
-    margin-bottom: 15px; /* Adds space between each line */
+    margin-bottom: 15px; 
     line-height: 1.6;
     font-size: 1rem;
 }
 
+/* CHANGE ICON COLOR HERE */
 .achievement-list i {
-    color: var(--primary);
+    color: #8f88ff; /* Change this hex code to your preferred icon color */
     margin-top: 5px;
     font-size: 1.1rem;
 }
@@ -2873,12 +2876,12 @@ body.dark-theme .achievement-item {
 /* Fix for the sidebar overlapping on desktop */
 @media screen and (min-width: 1100px) {
     #about, #achievements, #projects {
-        padding-right: 150px; /* Pushes content away from the right-side nav */
+        padding-right: 180px; /* Increased to ensure it clears your 'Home/About' nav */
     }
 }
 
-/* Fix for the clumping text you see in screenshots */
+/* CHANGE BOLD TEXT COLOR HERE */
 .achievement-list strong {
-    color: var(--primary);
+    color: #8f88ff; /* Change this hex code to your preferred text color */
     margin: 0 2px;
 }
